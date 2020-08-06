@@ -4,6 +4,23 @@
 }
 
 
+.logoimg img{
+  width: 10vw;
+  padding: 2vw;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-menu img{
+  padding: 2vw;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  width: 8vw;
+}
+
+
 
 
 
@@ -132,3 +149,16 @@
   0%{-webkit-transform:translatey(-45px);transform:translatey(-45px)}
 50%{-webkit-transform:translatey(0);transform:translatey(0)}
 to{-webkit-transform:translatey(-45px);transform:translatey(-45px)}}
+
+@-webkit-keyframes rebote {
+  0%, 50%, 100% {
+    transform: translateY(0);
+}
+30% {
+    transform: translateY(-15px);
+}
+
+80% {
+    transform: translateY(15px);
+}
+}

@@ -11,24 +11,56 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
+	<div class="load-page">
+		<div class="load-page-content">
+			<img class="logoload" src="assets/logo.png">
+			<img class="loadimg" src="assets/load.gif">		
+			<p class="loadingtxt">Cargando...</p>
+		</div>
+	</div>
 	<div class="mainini">
-
-		<div class="load-page">
-			<div class="load-page-content">
-				<img class="logoload" src="assets/logo.png">
-				<img class="loadimg" src="assets/load.gif">		
-				<p class="loadingtxt">Cargando...</p>
+		<div class="header">
+			<div class="logoimg">
+				<img src="assets/logo.png">
 			</div>
+			<div class="btn-menu">
+				<img src="assets/menu_b.png">
+			</div>
+		</div>
+
+		<div class="contenido-secciones">
+			<div onmouseover="pop1()" class="contw drag">
+				<div class="clases">
+					<p>Clases/Programacion Web</p>
+					<img class="webimg" src="assets/web.jpg">
+				</div>
+			</div>
+			<div onmouseover="pop2()" class="conts drag">
+				<div class="servicios">
+					<p>Servicios</p>
+					<img class="servimg" src="assets/servicios.jpg">
+				</div>
+			</div>
+			<div onmouseover="pop3()" class="contp drag">
+				<div class="products">
+					<p>Productos/Catalogo</p>
+					<img class="produimg" src="assets/produ.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="robotarea">
+			<img class="loadimg drop" src="assets/load.gif">
 		</div>
 		
 	</div>
 
 	
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/gsap.js"></script>
 	<script src="js/punch.js"></script>
 	<script src="js/howler.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/portada.js"></script>
 	
 </body>
