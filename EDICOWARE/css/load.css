@@ -27,7 +27,7 @@ body{
   height: 100%;
   top: 0;
   background-color: rgb(86,50,20,100);
-  display: none;
+
 }
 .load-page-content{
   display: flex;
