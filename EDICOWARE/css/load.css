@@ -1,0 +1,51 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+
+html{
+  width: 100%;
+  height: 100%;
+
+}
+
+body{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  font-family: mikadob;
+  overflow: hidden;
+}
+
+.load-page{  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgb(86,50,20,100);
+}
+.load-page-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logoload{
+  width: 15vw;
+  animation: zoomimg 5s;
+}
+.loadimg{
+  width: 24vw;
+}
+.loadingtxt{
+  font-size: 5vw;
+  color: white;
+  font-family: boldedico;
+  animation: pulse 2s infinite;
+}
+
+
