@@ -75,8 +75,15 @@ $(".drop").droppable({
 	$('.globr').removeClass('globr2');
   	setTimeout(function(){
   		gsap.to(".loadimg", {opacity: 0, x: 1000, duration: 3})
+  		gsap.to(".contw", {opacity: 0, y: -1000, duration: 3})
+  		gsap.to(".conts", {opacity: 0, x: -1000, duration: 3})
+  		gsap.to(".contp", {opacity: 0, x: 1000, duration: 3})
   		sonido_bien.play();
   	}, 500);
     
   }
+});
+
+$( ".btn-menu" ).click(function() { 
+	$('.menu').show('slow');
 });

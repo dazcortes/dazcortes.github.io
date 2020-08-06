@@ -34,7 +34,7 @@ body{
   cursor: grab;
   background-color: #f7b731;
   padding: 0vw;
-  width: 15vw;
+  width: 17vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@ body{
   cursor: grab;
   background-color: #01caa6;
   padding: 0vw;
-  width: 15vw;
+  width: 17vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@ body{
   cursor: grab;
   background-color: #28b5f5;
   padding: 0vw;
-  width: 15vw;
+  width: 17vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,6 +111,7 @@ body{
 }
 .robotactivebett{
   animation: glow3 5s infinite;
+  border:0.3vw #CDDC39 dotted;
 }
 .robotactive{
   animation: glow2 5s infinite;
