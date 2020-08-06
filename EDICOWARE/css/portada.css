@@ -109,15 +109,37 @@ body{
 .robotinactive{
   animation: glow 5s infinite;
 }
+.robotactivebett{
+  animation: glow3 5s infinite;
+}
 .robotactive{
   animation: glow2 5s infinite;
 }
 .globr{
-  position: absolute;
-  width: 19vw;
-  margin-right: 30%;
+  display: none;
 }
 
+.globr2{
+  position: absolute;
+  width: 31vw;
+  margin-right: 39%;
+  animation: zoomimg 5s;
+  margin-bottom: 2%;
+}
+
+.txtglob{
+  display: none;
+  
+}
+.txtglob2{
+  position: absolute;
+  width: 21vw;
+  margin-right: 43%;
+  animation: zoomimg 5s;
+  font-size: 2vw;
+  color: white;
+  z-index: 1;
+}
 
 
 

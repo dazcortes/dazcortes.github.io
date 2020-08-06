@@ -48,6 +48,17 @@
     filter: drop-shadow(0.0625rem 0.0625rem 0.0625rem green);
   }
 }
+@keyframes glow3 {
+  0% {
+    filter: drop-shadow(0.0625rem 0.0625rem 0.0625rem #f7b731);
+  }
+  50% {
+    filter: drop-shadow(0.0625rem 0.0625rem 1.375rem #f7b731);
+  }
+  100% {
+    filter: drop-shadow(0.0625rem 0.0625rem 0.0625rem #f7b731);
+  }
+}
 
 
 

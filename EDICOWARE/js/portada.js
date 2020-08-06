@@ -1,9 +1,17 @@
 
-gsap.from(".loadimg", {opacity: 0, x: 1000, duration: 1})
+
 
 window.addEventListener("load", function(){
 	setTimeout(function(){
 		$('.load-page').hide('slow');
+		gsap.from(".loadimg", {opacity: 0, x: 1000, duration: 3})
+		gsap.from(".contw", {opacity: 0, y: -1000, duration: 3})
+		gsap.from(".conts", {opacity: 0, x: -1000, duration: 3})
+		gsap.from(".contp", {opacity: 0, x: 1000, duration: 3})
+		$('.globr').addClass('globr2');
+		$('.globr').removeClass('globr');
+		$('.txtglob').addClass('txtglob2');
+		$('.txtglob').removeClass('txtglob');
 	}, 5000);
     
 });
@@ -42,11 +50,11 @@ $(".drag").draggable({
   revert: "invalid",
   cursor: "move",
   start: function (event, ui) {
-  	//$('.drop').addClass('dott');
+  	$('.drop').addClass('robotactivebett');
   },
   stop: function (event, ui) {
   	//console.log(event.target.id);
-  	//$('.drop').removeClass('dott');
+  	$('.drop').removeClass('robotactivebett');
   }
 
 });
@@ -61,10 +69,13 @@ $(".drop").droppable({
   	console.log(ui.draggable[0]);
   	$('.drop').removeClass('robotinactive');
   	$('.drop').addClass('robotactive');
+  	$('.txtglob2').addClass('txtglob');
+  	$('.txtglob').removeClass('txtglob2');
+  	$('.globr2').addClass('globr');
+	$('.globr').removeClass('globr2');
   	setTimeout(function(){
   		gsap.to(".loadimg", {opacity: 0, x: 1000, duration: 3})
   		sonido_bien.play();
-
   	}, 500);
     
   }
