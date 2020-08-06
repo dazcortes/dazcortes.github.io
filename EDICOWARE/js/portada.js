@@ -59,9 +59,12 @@ $(".drop").droppable({
 	},
   drop: function (event, ui) {
   	console.log(ui.draggable[0]);
+  	$('.drop').removeClass('robotinactive');
+  	$('.drop').addClass('robotactive');
   	setTimeout(function(){
-  		sonido_bien.play();
   		gsap.to(".loadimg", {opacity: 0, x: 1000, duration: 3})
+  		sonido_bien.play();
+
   	}, 500);
     
   }

@@ -34,7 +34,7 @@ body{
   cursor: grab;
   background-color: #f7b731;
   padding: 0vw;
-  width: 20vw;
+  width: 15vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@ body{
   cursor: grab;
   background-color: #01caa6;
   padding: 0vw;
-  width: 20vw;
+  width: 15vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@ body{
   cursor: grab;
   background-color: #28b5f5;
   padding: 0vw;
-  width: 20vw;
+  width: 15vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,6 +81,7 @@ body{
 .contenido-secciones p{
   font-size: 2vw;
   color: white;
+      font-family: boldedico;
 }
 
 .contenido-secciones{
@@ -89,19 +90,32 @@ body{
 }
 
 .webimg{
-  width: 15vw;
+  width: 10vw;
 }
 .servimg{
-  width: 15vw;
+  width: 10vw;
 }
 .produimg{
-  width: 15vw;
+  width: 10vw;
 }
 
 .robotarea{
   display: flex;
   justify-content: center;
+  align-items: center;
+  
+}
+
+.robotinactive{
   animation: glow 5s infinite;
+}
+.robotactive{
+  animation: glow2 5s infinite;
+}
+.globr{
+  position: absolute;
+  width: 19vw;
+  margin-right: 30%;
 }
 
 

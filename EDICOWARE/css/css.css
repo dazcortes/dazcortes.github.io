@@ -37,6 +37,18 @@
   }
 }
 
+@keyframes glow2 {
+  0% {
+    filter: drop-shadow(0.0625rem 0.0625rem 0.0625rem green);
+  }
+  50% {
+    filter: drop-shadow(0.0625rem 0.0625rem 1.375rem green);
+  }
+  100% {
+    filter: drop-shadow(0.0625rem 0.0625rem 0.0625rem green);
+  }
+}
+
 
 
 
