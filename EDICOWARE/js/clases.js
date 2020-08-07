@@ -66,25 +66,14 @@ $(".drop").droppable({
 	  "ui-droppable-active": "ui-state-default"
 	},
   drop: function (event, ui) {
-  	console.log(ui.draggable[0]);
+  	console.log(ui.draggable[0].id);
   	$('.drop').removeClass('robotinactive');
   	$('.drop').addClass('robotactive');
   	$('.txtglob2').addClass('txtglob');
   	$('.txtglob').removeClass('txtglob2');
   	$('.globr2').addClass('globr');
 	$('.globr').removeClass('globr2');
-  	setTimeout(function(){
-  		gsap.to(".loadimg2", {opacity: 0, x: 1000, duration: 3})
-  		gsap.to(".contw", {opacity: 0, y: -1000, duration: 3})
-  		gsap.to(".conts", {opacity: 0, x: -1000, duration: 3})
-  		gsap.to(".contp", {opacity: 0, x: 1000, duration: 3})
-  		sonido_bien.play();
-  		if (ui.draggable[0].id == 'clases') {setTimeout(function(){ location.href='clases.html';}, 500);}
-  		if (ui.draggable[0].id == 'servicios') {setTimeout(function(){ location.href='servicios.html';}, 500);}
-  		if (ui.draggable[0].id == 'productos') {setTimeout(function(){ location.href='productos.html';}, 500);}
-  		
-  	}, 500);
-    
+  	    
   }
 });
 
@@ -96,4 +85,8 @@ $( ".menuopen" ).click(function() {
 $( ".equis" ).click(function() { 
 	$('.menu').hide('slow');
 	sonido_bien.play();
+});
+
+$( ".inicio" ).click(function() { 
+	location.href='index.html';
 });

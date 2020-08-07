@@ -44,13 +44,90 @@
   font-family: boldedico;
   font-size: 2vw;
 }
+.menu-cont-txt p{
+  padding: 3vw;
+}
 .menu-cont-txt p:hover{
   cursor: pointer;
-  background-color: red;
+  background-color: #fe8208;
+  
+  border-radius: 2vw;
 }
 .equis{
   margin: 5vw;
   cursor: pointer;
+}
+
+.redesmenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.redesmenu img{
+  margin: 2vw;
+}
+
+.contenido-clases .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2vw;
+  font-family: boldedico;
+}
+.clases-sec{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.clases-sec p{
+  color: white;
+  font-size: 2vw;
+  font-family: boldedico;
+  padding: 2vw;
+}
+.html{
+  background-color: #de4b25;
+  cursor: grab;
+  transform: rotate(-11deg);
+}
+.css{
+  background-color: #2173f7;
+  cursor: grab;
+  transform: rotate(11deg);
+}
+.js{
+  background-color: #efd81d;
+  cursor: grab;
+  transform: rotate(-11deg);
+}
+.my{
+  background-color: #005e86;
+  cursor: grab;
+  transform: rotate(11deg);
+}
+.php{
+  background-color: #52628f;
+  cursor: grab;
+  transform: rotate(-11deg);
+
+}
+
+.html:hover{
+  animation: rebote 1s infinite;
+}
+.css:hover{
+  animation: rebote 1s infinite;
+}
+.js:hover{
+  animation: rebote 1s infinite;
+}
+.my:hover{
+  animation: rebote 1s infinite;
+}
+.php:hover{
+  animation: rebote 1s infinite;
 }
 
 

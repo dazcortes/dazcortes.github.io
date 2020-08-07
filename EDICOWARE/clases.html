@@ -27,17 +27,18 @@
 			<div class="menu-content">
 				<div class="logomenu">
 					<div class="logoimg">
-						<img src="assets/logo.png">
+						<img class="inicio" src="assets/logo.png">
 					</div>
 					<div class="btn-menu">
 						<p class="equis">X</p>
 					</div>
 				</div>
 				<div class="menu-cont-txt">
-					<p  onmouseenter="pop3();">SERVICIOS</p>
-					<p  onmouseenter="pop3();">CLASES</p>
-					<p  onmouseenter="pop3();">PRODUCTOS/CATALOGO</p>
-					<p id="contacto" onmouseenter="pop3();">CONTÁCTO</p>
+					<p onmouseenter="pop3();" class="inicio">INICIO</p>
+					<p onmouseenter="pop3();">SERVICIOS</p>
+					<p onmouseenter="pop3();">CLASES</p>
+					<p onmouseenter="pop3();">PRODUCTOS/CATALOGO</p>
+					<p onmouseenter="pop3();">CONTÁCTO</p>
 				</div>
 				<div class="redesmenu">
 					<img class="face" src="assets/face.png">
@@ -47,32 +48,23 @@
 		</div>
 		<div class="header">
 			<div class="logoimg">
-				<img src="assets/logo.png">
+				<img class="inicio" src="assets/logo.png">
 			</div>
 			<div class="btn-menu">
 				<img class="menuopen" src="assets/menu_b.png">
 			</div>
 		</div>
 
-		<div class="contenido-secciones">
-			
-			<div id="servicio" onmouseenter="pop3();" class="conts drag">
-				<div class="servicios">
-					<p>Servicios</p>
-					<img class="servimg" src="assets/servicios.jpg">
-				</div>
+		<div class="contenido-clases">
+			<div class="title">
+				<p>Clases en linea</p>
 			</div>
-			<div id="clases" onmouseenter="pop2();" class="contw drag">
-				<div class="clases">
-					<p>Clases/Programacion Web</p>
-					<img class="webimg" src="assets/web.jpg">
-				</div>
-			</div>
-			<div id="productos" onmouseenter="pop3();" class="contp drag">
-				<div class="products">
-					<p>Productos/Catalogo</p>
-					<img class="produimg" src="assets/produ.png">
-				</div>
+			<div class="clases-sec">
+				<p onmouseenter="pop2();" id="html" class="html drag">HTML</p>
+				<p onmouseenter="pop3();" id="css" class="css drag">CSS</p>
+				<p onmouseenter="pop2();" id="js" class="js drag">JAVASCRIPT</p>
+				<p onmouseenter="pop3();" id="mysql" class="my drag">MYSQL</p>
+				<p onmouseenter="pop2();" id="php" class="php drag">PHP</p>
 			</div>
 		</div>
 
@@ -82,13 +74,18 @@
 			</div>
 			<img class="globr" src="assets/glob.png">
 			<img class="loadimg2 drop robotinactive" src="assets/load.gif">
-
 		</div>
 
 		<div class="redes">
-			<img class="face" src="assets/face.png">
-			<img class="whats" src="assets/whats.png">
+			<a href="https://www.facebook.com/Edicoware-2536640499948798/?modal=admin_todo_tour" target="_blank">
+				<img class="face" src="assets/face.png">
+			</a>
+			<a href="https://wa.me/14433068803" target="_blank">
+				<img class="whats" src="assets/whats.png">
+			</a>
+			
 		</div>
+
 		
 	</div>
 
@@ -98,7 +95,7 @@
 	<script src="js/gsap.js"></script>
 	<script src="js/punch.js"></script>
 	<script src="js/howler.js"></script>
-	<script src="js/portada.js"></script>
+	<script src="js/clases.js"></script>
 	
 </body>
 </html>
