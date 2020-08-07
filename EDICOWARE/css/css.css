@@ -32,8 +32,8 @@
 
 .logomenu{
   display: flex;
-    justify-content: center;
-    align-items: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu-cont-txt{
@@ -47,6 +47,10 @@
 .menu-cont-txt p:hover{
   cursor: pointer;
   background-color: red;
+}
+.equis{
+  margin: 5vw;
+  cursor: pointer;
 }
 
 

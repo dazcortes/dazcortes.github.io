@@ -84,6 +84,12 @@ $(".drop").droppable({
   }
 });
 
-$( ".btn-menu" ).click(function() { 
+$( ".menuopen" ).click(function() { 
 	$('.menu').show('slow');
+	sonido_bien.play();
+});
+
+$( ".equis" ).click(function() { 
+	$('.menu').hide('slow');
+	sonido_bien.play();
 });
