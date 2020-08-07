@@ -183,6 +183,9 @@ body{
 }
 
 @media (max-width: 780px) and (max-height: 277px){
+  .loadimg2{
+    width: 15vw;
+  }
   .conts{
     width: 17vw;
     height: 31vh;
