@@ -7,6 +7,7 @@
 .logoimg img{
   width: 10vw;
   padding: 2vw;
+  cursor: pointer;
 }
 .header{
   display: flex;
@@ -73,7 +74,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 2vw;
+  font-size: 5vw;
   font-family: boldedico;
 }
 .clases-sec{
@@ -130,7 +131,185 @@
   animation: rebote 1s infinite;
 }
 
+.contenido-servicios{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.contenido-servicios p{
+  color: white;
+  font-family: boldedico;
+  font-size: 2vw;
+}
+
+.contenido-productos{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contenido-productos p{
+  color: white;
+  font-family: boldedico;
+  font-size: 2vw;
+  padding: 2vw;
+}
+
+.productossec{
+  background-color: #8BC34A;
+  cursor: grab;
+  transform: rotate(-11deg);
+}
+.audiolibros{
+  background-color: #e91e63;
+  cursor: grab;
+  transform: rotate(11deg);
+}
+.libros{
+  background-color: #009688;
+  cursor: grab;
+  transform: rotate(-11deg);
+}
+
+.productossec:hover{
+  animation: rebote 1s infinite;
+}
+.audiolibros:hover{
+  animation: rebote 1s infinite;
+}
+.libros:hover{
+  animation: rebote 1s infinite;
+}
+
+.title-productos{
+  display: flex;
+  justify-content: center;
+}
+.title-productos p{
+  color: white;
+  font-family: boldedico;
+  font-size: 5vw;
+  padding: 2vw;
+}
+.tiel-prin p{
+  color: white;
+  font-family: boldedico;
+  font-size: 5vw;
+  padding: 2vw;
+}
+.title-servicios p{
+  color: white;
+  font-family: boldedico;
+  font-size: 5vw;
+  padding: 2vw;
+}
+
+.pagweb{
+  background-color: #009688;
+  cursor: grab;
+  transform: rotate(-11deg);
+}
+.sisw{
+  background-color: #009688;
+  cursor: grab;
+  transform: rotate(11deg);
+}
+.pventa{
+  background-color: #009688;
+  cursor: grab;
+  transform: rotate(-11deg);
+}
+.drag{
+  z-index: 7;
+}
+.clasestitle{
+  color: white;
+  font-family: boldedico;
+  font-size: 5vw;
+  padding: 2vw;
+}
+
+.cont-dividido{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.loadimgau{
+  width: 15vw;
+}
+.globrau{
+  width: 15vw;
+}
+.contenido-audio{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.line1{
+  display: flex;
+  align-items: center;
+}
+.line1 p{
+  background-color: #8bc34a;
+  text-align: center;
+  margin: 2vw;
+  padding: 1vw;
+  cursor: grab;
+}
+.line2{
+  display: flex;
+  align-items: center;
+}
+.line2 p{
+  background-color: #ffc107;
+  text-align: center;
+  margin: 2vw;
+  padding: 1vw;
+  cursor: grab;
+}
+.line3{
+  display: flex;
+  align-items: center;
+}
+.line3 p{
+  background-color: #009688;
+  text-align: center;
+  margin: 2vw;
+  padding: 1vw;
+  cursor: grab;
+}
+
+.modalreproductor{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+  background: #FFC107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalreproductor-cont{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background: red;
+  padding: 7vw;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2vw;
+}
+.btn-play{
+  width: 10vw;
+}
+.titlerepro p{
+  color: white;
+  font-family: boldedico;
+  font-size: 5vw;
+  padding: 2vw;
+}
 
 
 

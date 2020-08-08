@@ -79,9 +79,9 @@ $(".drop").droppable({
   		gsap.to(".conts", {opacity: 0, x: -1000, duration: 3})
   		gsap.to(".contp", {opacity: 0, x: 1000, duration: 3})
   		sonido_bien.play();
-  		if (ui.draggable[0].id == 'clases') {setTimeout(function(){ location.href='clases.html';}, 500);}
-  		if (ui.draggable[0].id == 'servicio') {setTimeout(function(){ location.href='servicios.html';}, 500);}
-  		if (ui.draggable[0].id == 'productos') {setTimeout(function(){ location.href='productos.html';}, 500);}
+  		if (ui.draggable[0].id == 'productos') {setTimeout(function(){ location.href='productos-shop.html';}, 500);}
+  		if (ui.draggable[0].id == 'audiolibros') {setTimeout(function(){ location.href='audio-libros.html';}, 500);}
+  		if (ui.draggable[0].id == 'libros') {setTimeout(function(){ location.href='libros-interactivos.html';}, 500);}
   		
   	}, 500);
     

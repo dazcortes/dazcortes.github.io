@@ -155,7 +155,7 @@ body{
 .loadimg2{
   position: absolute;
   bottom: 5vh;
-  width: 23vw;
+  width: 20vw;
 }
 
 .redes{
@@ -168,11 +168,11 @@ body{
     bottom: 5vh;
 }
 .face{
-  width: 5vw;
+  width: 10vw;
   cursor: pointer;
 }
 .whats{
-  width: 3.5vw;
+  width: 6.5vw;
   cursor: pointer;
 }
 .face:hover{
@@ -197,7 +197,7 @@ body{
   font-size: 1.5vw;
   color: white;
   z-index: 1;
-  margin-bottom: -2%;
+  margin-bottom: 0%;
 }
 
 @media (max-width: 780px) and (max-height: 277px){

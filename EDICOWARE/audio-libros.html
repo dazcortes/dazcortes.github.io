@@ -51,38 +51,74 @@
 				<img src="assets/logo.png">
 			</div>
 			<div class="title-productos">
-				<p>Productos</p>
+				<p>Audio libros</p>
 			</div>
 			<div class="btn-menu">
 				<img class="menuopen" src="assets/menu_b.png">
 			</div>
 		</div>
 
-
-		<div class="contenido-productos">
-			<div class="productosc">
-				<p onmouseenter="pop3();" class="productossec drag" id="productos">Productos charo</p>
-			</div>			
-			<div class="audiolibrossec drag" id="audiolibros">
-				<p onmouseenter="pop3();" class="audiolibros">Audiolibros</p>
+		<div class="cont-dividido">
+			<div class="contenido-audio">
+				<div class="line1">
+					<div class="productosc">
+						<p onmouseenter="pop3();" class="drag" id="joven">Cuando yo era joven</p>
+					</div>			
+					<div class="audiolibrossec drag" id="audiolibros">
+						<p onmouseenter="pop3();" class="drag" id="diablitos">El hombre que comio diablitos</p>
+					</div>
+				</div>
+				<div class="line2">
+					<div class="librosinteractivos">
+						<p onmouseenter="pop3();" class="drag" id="mona">La mona</p>
+					</div>
+					<div class="librosinteractivos">
+						<p onmouseenter="pop3();" class="drag" id="tecuanicha">La tecuanicha</p>
+					</div>
+				</div>
+				
+				<div class="line3">
+					<div class="librosinteractivos">
+						<p onmouseenter="pop3();" class="drag" id="perros">Lo que ven los perros</p>
+					</div>
+					<div class="librosinteractivos">
+						<p onmouseenter="pop3();" class="drag" id="onada">O todo o noda</p>
+					</div>
+				</div>
+				
+				
 			</div>
-			<div class="librosinteractivos">
-				<p onmouseenter="pop3();" class="libros drag" id="libros">Libros interactivos</p>
+			<div class="robotareaaudio">
+				<div class="txtglobau">
+					<p>Arrastra hacia mi una de las opciones para escuchar el cuento.</p>
+				</div>
+				<img class="globrau" src="assets/glob.png">
+				<img class="loadimgau drop robotinactiveau" src="assets/load.gif">
 			</div>
+			
 		</div>
 
-		<div class="robotarea">
-			<div class="txtglob">
-				<p>Arrastra hacia mi una de las opciones de arriba para llevarte a descrubrila.</p>
-			</div>
-			<img class="globr" src="assets/glob.png">
-			<img class="loadimg2 drop robotinactive" src="assets/load.gif">
-
-		</div>
 
 		<div class="redes">
 			<img class="face" src="assets/face.png">
 			<img class="whats" src="assets/whats.png">
+		</div>
+
+		<div class="modalreproductor">
+			<div class="modalreproductor-cont">
+				<div class="cerrarmodal">
+					<img class="cerrarimg" src="">
+				</div>
+				<div class="titlerepro">
+					<p>O todo o nada</p>
+				</div>
+				<div class="contbtnplay">
+					<img class="btn-play" src="assets/play.png">
+				</div>
+				<div class="btnstop">
+					<img class="stopimg" src="">
+				</div>
+			</div>
 		</div>
 		
 	</div>
@@ -93,7 +129,7 @@
 	<script src="js/gsap.js"></script>
 	<script src="js/punch.js"></script>
 	<script src="js/howler.js"></script>
-	<script src="js/productos.js"></script>
+	<script src="js/audiolibros.js"></script>
 	
 </body>
 </html>

@@ -90,3 +90,25 @@ $( ".equis" ).click(function() {
 $( ".inicio" ).click(function() { 
 	location.href='index.html';
 });
+
+$( ".serviciosmenu" ).click(function() { 
+	sonido_bien.play();
+	setTimeout(function(){ location.href='servicios.html'; }, 1000);
+});
+$( ".clasesmenu" ).click(function() { 
+	sonido_bien.play();
+	setTimeout(function(){ location.href='clases.html'; }, 1000);
+});
+$( ".productsmenu" ).click(function() { 
+	sonido_bien.play();
+	setTimeout(function(){ location.href='productos.html'; }, 1000);
+});
+$( ".contactomenu" ).click(function() { 
+	sonido_bien.play();
+	setTimeout(function(){ location.href='contacto.html'; }, 1000);
+});
+
+$( ".logoimg img" ).click(function() { 
+	sonido_bien.play();
+	setTimeout(function(){ location.href='index.html'; }, 1000);
+});
