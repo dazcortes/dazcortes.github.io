@@ -34,6 +34,11 @@ var sonido_bien = new Howl({
 	volume: 0.5
 });
 
+var joven = new Howl({
+	src: ["assets/sonidos/joven.mp3"],
+	volume: 0.5
+});
+
 function pop1(){
 	sonido_pop1.play();
 }
@@ -73,17 +78,10 @@ $(".drop").droppable({
   	$('.txtglob').removeClass('txtglob2');
   	$('.globr2').addClass('globr');
 	$('.globr').removeClass('globr2');
-  	setTimeout(function(){
-  		gsap.to(".loadimg2", {opacity: 0, x: 1000, duration: 3})
-  		gsap.to(".contw", {opacity: 0, y: -1000, duration: 3})
-  		gsap.to(".conts", {opacity: 0, x: -1000, duration: 3})
-  		gsap.to(".contp", {opacity: 0, x: 1000, duration: 3})
   		sonido_bien.play();
-  		if (ui.draggable[0].id == 'productos') {setTimeout(function(){ location.href='productos-shop.html';}, 500);}
+  		if (ui.draggable[0].id == 'joven') {$('.modalreproductor').css({'display':'flex'});}
   		if (ui.draggable[0].id == 'audiolibros') {setTimeout(function(){ location.href='audio-libros.html';}, 500);}
   		if (ui.draggable[0].id == 'libros') {setTimeout(function(){ location.href='libros-interactivos.html';}, 500);}
-  		
-  	}, 500);
     
   }
 });
@@ -118,4 +116,16 @@ $( ".contactomenu" ).click(function() {
 $( ".logoimg img" ).click(function() { 
 	sonido_bien.play();
 	setTimeout(function(){ location.href='index.html'; }, 1000);
+});
+
+$( ".cerrarmodal" ).click(function() { 
+	sonido_bien.play();
+	$('.modalreproductor').hide('hide');
+});
+
+$( ".btn-play" ).click(function() { 
+	joven.play();
+});
+$( ".cerrarmodal" ).click(function() { 
+	joven.stop();
 });

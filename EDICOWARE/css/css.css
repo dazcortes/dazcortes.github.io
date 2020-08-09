@@ -234,12 +234,23 @@
   flex-direction: row;
   justify-content: space-around;
 }
+.txtglobau{
+position: absolute;
+    color: white;
+    font-family: boldedico;
+    font-size: 2vw;
+    padding: 2vw;
+    width: 23%;
+    margin-left: -32%;
+}
 
 .loadimgau{
-  width: 15vw;
+  width: 22vw;
+    margin-right: 11vw;
 }
 .globrau{
-  width: 15vw;
+  width: 28vw;
+  margin-right: -6vw;
 }
 .contenido-audio{
   display: flex;
@@ -256,6 +267,9 @@
   margin: 2vw;
   padding: 1vw;
   cursor: grab;
+  font-family: boldedico;
+  font-size: 2vw;
+  transform: rotate(-9deg);
 }
 .line2{
   display: flex;
@@ -267,6 +281,9 @@
   margin: 2vw;
   padding: 1vw;
   cursor: grab;
+   font-size: 2vw;
+  font-family: boldedico;
+  transform: rotate(-9deg);
 }
 .line3{
   display: flex;
@@ -278,6 +295,18 @@
   margin: 2vw;
   padding: 1vw;
   cursor: grab;
+    font-size: 2vw;
+    font-family: boldedico;
+  transform: rotate(-9deg);
+}
+.line3 p:hover{
+  animation: rebote 1s;
+}
+.line2 p:hover{
+  animation: rebote 1s;
+}
+.line1 p:hover{
+  animation: rebote 1s;
 }
 
 .modalreproductor{
@@ -286,29 +315,57 @@
   height: 100%;
   top: 0;
   z-index: 10;
-  background: #FFC107;
+  background-color: rgb(44 32 20 / 80%);
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: zoomimg 2s;
+  display: none;
 }
 .modalreproductor-cont{
-  width: 80%;
+  width: 70%;
   display: flex;
   justify-content: center;
-  background: red;
-  padding: 7vw;
+  background: #009688;
+  padding: 1vw;
   flex-direction: column;
   align-items: center;
   border-radius: 2vw;
+  border: 0.5vw #104e48 solid;
 }
 .btn-play{
   width: 10vw;
+  animation: pulse 2s infinite;
+  cursor: pointer;
 }
 .titlerepro p{
   color: white;
   font-family: boldedico;
   font-size: 5vw;
   padding: 2vw;
+}
+.cerrarmodal p{
+  color: white;
+    font-family: boldedico;
+    font-size: 5vw;
+    padding: 2vw;
+    cursor: pointer;
+}
+.cerrarmodal{
+  position: absolute;
+    margin-top: -23%;
+    margin-left: 63%;
+}
+.stopimg{
+  width: 15vw;
+}
+.playim{
+  display: flex;
+}
+.robotareaaudio{
+  display: flex;
+      justify-content: center;
+      align-items: center;
 }
 
 
@@ -473,6 +530,34 @@ to{-webkit-transform:translatey(-45px);transform:translatey(-45px)}}
 80% {
     transform: translateY(15px);
 }
+}
+
+
+
+@media (max-width: 780px) and (max-height: 277px){
+  .logomenu{
+    height: 20vh;
+  }
+  .header p{
+    font-size: 3vw;
+  }
+  .line1 p{
+    margin: 1vw;
+    padding: 1vw;
+
+  }
+
+    .line2 p{
+    margin: 1vw;
+    padding: 1vw;
+
+  }
+
+    .line3 p{
+    margin: 1vw;
+    padding: 1vw;
+
+  }
 }
 
 
