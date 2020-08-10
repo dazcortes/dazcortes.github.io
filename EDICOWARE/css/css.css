@@ -364,9 +364,30 @@ position: absolute;
 }
 .robotareaaudio{
   display: flex;
-      justify-content: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
 }
+.face{
+  width: 10vw;
+  cursor: pointer;
+}
+.whats{
+  width: 6.5vw;
+  cursor: pointer;
+}
+.face:hover{
+  animation: rebote 1s;
+}
+.whats:hover{
+  animation: rebote 1s;
+}
+.equis{
+  font-family: boldedico;
+  color: white;
+  font-size: 3vw;
+}
+
+
 
 
 

@@ -1,0 +1,14 @@
+
+.contitem{
+  background: #ff9800;
+  text-align: center;
+  padding: 1vw;
+  margin: 1vw;
+}
+.mainini-shop{
+  background-color: rgb(44,32,20,100);
+  overflow: auto;
+}
+.itemcont img{
+  width: 15vw;
+}

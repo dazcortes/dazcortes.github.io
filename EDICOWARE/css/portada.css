@@ -146,11 +146,7 @@ body{
 
 }
 
-.equis{
-  font-family: boldedico;
-  color: white;
-  font-size: 3vw;
-}
+
 
 .loadimg2{
   position: absolute;
@@ -167,20 +163,7 @@ body{
     flex-direction: column;
     bottom: 5vh;
 }
-.face{
-  width: 10vw;
-  cursor: pointer;
-}
-.whats{
-  width: 6.5vw;
-  cursor: pointer;
-}
-.face:hover{
-  animation: rebote 1s;
-}
-.whats:hover{
-  animation: rebote 1s;
-}
+
 
 .globr2{
   position: absolute;
