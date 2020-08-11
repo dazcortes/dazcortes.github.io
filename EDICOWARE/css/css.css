@@ -601,32 +601,113 @@ to{-webkit-transform:translatey(-45px);transform:translatey(-45px)}}
 .main_cuartolandscape{
   display: none;
 }
+.loadimg2{
+  width: 15vw,
+}
+
+.contenido-secciones p{
+  font-size: 2vw;
+  color: white;
+  font-family: boldedico;
+}
+
 
 
 @media (orientation: portrait) {
 
-  .main_cuartolandscape{
+  .loadimg2{
     position: absolute;
-    background: #563214;
-    height: 100%;
-    width: 100%;
+    bottom: 10vh;
+    width: 52vw;
+    right: 6vw;
+  }
+  .contenido-secciones{
     display: flex;
-    align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+  }
+  .contenido-secciones p{
+    font-size: 5vw;
+  }
+  .drop{
+    padding: 2vw;
+  }
+  .conts{
+    margin: 7vw;
+    width: 50vw;
+  }
+  .servimg{
+    width: 25vw;
+  }
+  .contw{
+    margin: 7vw;
+    width: 50vw;
+  }
+  .webimg{
+    width: 25vw;
+  }
+  .contp{
+     margin: 7vw;
+    width: 50vw;
+  }
+  .produimg{
+    width: 25vw;
+  }
+  .globr2{
+    left: 5vw;
+    width: 48vw;
+    bottom: 16vh;
+  }
+  .txtglob2 {
+    position: absolute;
+    width: 33vw;
+    left: 8vw;
+    animation: zoomimg 5s;
+    font-size: 3.5vw;
+    color: white;
+    z-index: 1;
+    margin-bottom: 0%;
+    bottom: 16vh;
+  }
+  .btn-menu img{
+    width: 17vw;
+  }
+  .tiel-prin p{
+    font-size: 7vw;
+  }
+  .logoimg img{
+        width: 21vw;
+  }
+  .redes {
+    position: absolute;
+    display: flex;
     justify-content: center;
-    z-index: 11;
+    align-items: center;
+    right: 35vw;
+    flex-direction: column;
+    bottom: 2vh;
+    flex-direction: row;
+    
   }
-  .main_cuartolandscape img{
-    width: 40%;
+  .face{
+    width: 15vw;
+    margin: 2vw;
   }
-  .mainini{  
-    display: none;
-  }
-  .introduccion{
-    display: none;
+  .whats{
+    width: 10.5vw;
+    margin: 2vw;
   }
 
-.actividad{
-  display: none;
-}
+  .menu-cont-txt{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    margin-top: 5vw;
+    font-family: boldedico;
+    font-size: 7vw;
+    flex-direction: column;
+    align-items: center;
+  }
   
 }

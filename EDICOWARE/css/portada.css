@@ -79,11 +79,7 @@ body{
 .contp:hover{
   animation: rebote 1s infinite;
 }
-.contenido-secciones p{
-  font-size: 2vw;
-  color: white;
-      font-family: boldedico;
-}
+
 
 .contenido-secciones{
   display: flex;
@@ -109,7 +105,9 @@ body{
 
 .robotinactive{
   animation: glow 5s infinite;
+  width: 15vw;
 }
+
 .robotactivebett{
   animation: glow3 5s infinite;
   border:0.3vw #CDDC39 dotted;
@@ -148,11 +146,7 @@ body{
 
 
 
-.loadimg2{
-  position: absolute;
-  bottom: 5vh;
-  width: 20vw;
-}
+
 
 .redes{
   position: absolute;
