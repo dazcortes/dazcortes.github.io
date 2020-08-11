@@ -53,7 +53,12 @@ body{
 @media (max-width: 780px) and (max-height: 277px){
     .loadimg{
     width: 14vw;
+    bottom: 2vh;
   }
+  .loadimg2{
+    bottom: 1vh;
+  }
+ 
 }
 
 
