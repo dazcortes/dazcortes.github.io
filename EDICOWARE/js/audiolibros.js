@@ -8,6 +8,7 @@ window.addEventListener("load", function(){
 		gsap.from(".contw", {opacity: 0, y: -1000, duration: 3})
 		gsap.from(".conts", {opacity: 0, x: -1000, duration: 3})
 		gsap.from(".contp", {opacity: 0, x: 1000, duration: 3})
+		gsap.from(".drag", {opacity: 0, y: -1000, duration: 3})
 		$('.globr').addClass('globr2');
 		$('.globr').removeClass('globr');
 		$('.txtglob').addClass('txtglob2');
@@ -128,4 +129,10 @@ $( ".btn-play" ).click(function() {
 });
 $( ".cerrarmodal" ).click(function() { 
 	joven.stop();
+});
+
+
+$( ".backimg" ).click(function() {
+$('.backimg').css({'padding':'1vw'}); 
+	window.history.back();
 });

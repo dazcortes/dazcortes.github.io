@@ -184,6 +184,13 @@
 .title-productos{
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.title-productos img{
+  width: 5vw;
+  transform: rotate(-45deg);
+  margin-right: 5vw;
+  cursor: pointer;
 }
 .title-productos p{
   color: white;

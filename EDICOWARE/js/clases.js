@@ -112,3 +112,8 @@ $( ".logoimg img" ).click(function() {
 	sonido_bien.play();
 	setTimeout(function(){ location.href='index.html'; }, 1000);
 });
+
+$( ".backimg" ).click(function() { 
+	$('.backimg').css({'padding':'1vw'});
+	window.history.back();
+});
