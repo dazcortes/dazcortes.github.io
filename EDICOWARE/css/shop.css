@@ -9,6 +9,8 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 .contitem:hover{
 	background: #f44336;
@@ -18,13 +20,13 @@
   overflow: auto;
 }
 .itemcont img{
-  width: 15vw;
+  width: 50%;
 }
 .contitem button{
 	background: white;
-    padding: 0.5vw;
+    padding: 0.5rem;
     border: 0px;
-    font-size: 1vw;
+    font-size: 1.5rem;
     outline: none;
     font-weight: bold;
 }
@@ -32,16 +34,17 @@
 	background-color: #ff9800;
 }
 .titleproducto{
-	font-size: 2vw;
+	font-size: 1.5rem;
 }
 .descripproduct{
-	font-size: 1.5vw;
+	font-size: 1.3rem;
 	text-align: left;
 }
 .price-product{
-	font-size: 2vw;
+	font-size: 2rem;
     font-weight: bold;
 }
 .itemcont .price-product span{
 	font-size: 1.5vw;
 }
+

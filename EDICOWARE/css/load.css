@@ -62,3 +62,15 @@ body{
 }
 
 
+@media (orientation: portrait) {
+    .logoload{
+    width: 50vw;
+  }
+  .loadimg{
+    width: 70vw;
+  }
+  .loadingtxt{
+    font-size: 20vw;
+  }
+}
+
