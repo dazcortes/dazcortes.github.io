@@ -16,7 +16,7 @@
 		<img src="assets/giroW.png">
 	</div>
 	
-	<div class="mainini">
+	<div style="overflow: auto;" class="mainini">
 		<div class="load-page">
 			<div class="load-page-content">
 				<img class="logoload" src="assets/logo.png">
@@ -60,56 +60,55 @@
 			</div>
 		</div>
 
-		<div class="cont-dividido">
-			<div class="contenido-audio">
-				<div class="line1">
-					<div class="productosc">
-						<p onmouseenter="pop3();" class="drag" id="joven">Cuando yo era joven</p>
-					</div>			
-					<div class="audiolibrossec" id="audiolibros">
-						<p onmouseenter="pop3();" class="drag" id="diablitos">El hombre que comio diablitos</p>
+		
+			<div class="contenido-audio container">
+				<div class="row">
+					
+					<div class="col-12 col-sm-4 col-md-3">
+						<div onmouseenter="pop3();" class="contsonido" id="perros">
+							<img src="assets/audiolibrosimg/terror.jpg">
+							<p>LO QUE VEN LOS PERROS</p>
+						</div>
 					</div>
+					<div class="col-12 col-sm-4 col-md-3">
+						<div onmouseenter="pop3();" class="contsonido" id="joven">
+							<img src="assets/audiolibrosimg/pinocho.jpg">
+							<p>CUANDO YO ERA JOVEN</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-3">
+						<div onmouseenter="pop3();" class="contsonido" id="diablitos">
+							<img src="assets/audiolibrosimg/terror.jpg">
+							<p>EL HOMBRE QUE COMIO DIABLITOS</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-3">
+						<div onmouseenter="pop3();" class="contsonido" id="mona">
+							<img src="assets/audiolibrosimg/elfo.png">
+							<p>LA MONA</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-3">
+						<div onmouseenter="pop3();" class="contsonido" id="tecuanicha">
+							<img src="assets/audiolibrosimg/terror.jpg">
+							<p>LA TECUANICHA</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-3">
+						<div onmouseenter="pop3();" class="contsonido" id="onada">
+							<img src="assets/audiolibrosimg/terror.jpg">
+							<p>O TODO, O NADA</p>
+						</div>
+					</div>
+
 				</div>
-				<div class="line2">
-					<div class="librosinteractivos">
-						<p onmouseenter="pop3();" class="drag" id="mona">La mona</p>
-					</div>
-					<div class="librosinteractivos">
-						<p onmouseenter="pop3();" class="drag" id="tecuanicha">La tecuanicha</p>
-					</div>
-				</div>
-				
-				<div class="line3">
-					<div class="librosinteractivos">
-						<p onmouseenter="pop3();" class="drag" id="perros">Lo que ven los perros</p>
-					</div>
-					<div class="librosinteractivos">
-						<p onmouseenter="pop3();" class="drag" id="onada">O todo o noda</p>
-					</div>
-				</div>
-				
-				
-			</div>
-			<div class="robotareaaudio">
-				<div class="txtglobau">
-					<p>Arrastra hacia mi una de las opciones para escuchar el cuento.</p>
-				</div>
-				<img class="globrau" src="assets/glob.png">
-				<img class="loadimgau drop robotinactiveau" src="assets/load.gif">
 			</div>
 			
-		</div>
-
-
-		<div class="redes">
-			<img class="face" src="assets/face.png">
-			<img class="whats" src="assets/whats.png">
-		</div>
 
 		<div class="modalreproductor">
 			<div class="modalreproductor-cont">
 				<div class="titlerepro">
-					<p>O todo o nada</p>
+					<p class="titulo_aidio_modal"></p>
 				</div>
 				<div class="playim">
 					<div class="contbtnplay">
@@ -127,6 +126,12 @@
 					</div>
 				</div>
 				
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="contfoot">
+				<p>© 2020 Copyright: EDICOWARE</p>
 			</div>
 		</div>
 		

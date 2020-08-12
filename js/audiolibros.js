@@ -5,10 +5,8 @@ window.addEventListener("load", function(){
 	setTimeout(function(){
 		$('.load-page').hide('slow');
 		gsap.from(".loadimg2", {opacity: 0, x: 1000, duration: 3})
-		gsap.from(".contw", {opacity: 0, y: -1000, duration: 3})
-		gsap.from(".conts", {opacity: 0, x: -1000, duration: 3})
-		gsap.from(".contp", {opacity: 0, x: 1000, duration: 3})
-		gsap.from(".drag", {opacity: 0, y: -1000, duration: 3})
+		gsap.from(".contsonido", {opacity: 0, y: -1000, duration: 3})
+		
 		$('.globr').addClass('globr2');
 		$('.globr').removeClass('globr');
 		$('.txtglob').addClass('txtglob2');
@@ -90,66 +88,44 @@ function pop3(){
 
 
 
-$(".drag").draggable({
-  opacity: 1,
-  helper: "clone",
-  revert: "invalid",
-  cursor: "move",
-  start: function (event, ui) {
-  	$('.drop').addClass('robotactivebett');
-  },
-  stop: function (event, ui) {
-  	//console.log(event.target.id);
-  	$('.drop').removeClass('robotactivebett');
-  }
-
-});
-
-$(".drop").droppable({
-	hoverClass: "hover-it",
-	classes: {
-	  "ui-droppable-hover": "ui-state-hover",
-	  "ui-droppable-active": "ui-state-default"
-	},
-  drop: function (event, ui) {
-  	$('.drop').removeClass('robotinactive');
-  	$('.drop').addClass('robotactive');
-  	$('.txtglob2').addClass('txtglob');
-  	$('.txtglob').removeClass('txtglob2');
-  	$('.globr2').addClass('globr');
-	$('.globr').removeClass('globr2');
-  		sonido_bien.play();
-  		if (ui.draggable[0].id == 'joven') {
-	  		$('.modalreproductor').css({'display':'flex'});
-	  		$('.btn-play').attr('id','joven');
-	  		$('.pp').attr('id','jovenp');
+$( ".contsonido" ).click(function() { 
+	if (this.id == 'joven') {
+  		$('.modalreproductor').css({'display':'flex'});
+  		$('.btn-play').attr('id','joven');
+  		$('.pp').attr('id','jovenp');
+  		$('.titulo_aidio_modal').html('Cuando yo era joven');
   		}
-  		if (ui.draggable[0].id == 'diablitos') {
-	  		$('.modalreproductor').css({'display':'flex'});
-	  		$('.btn-play').attr('id','diablitos');
-	  		$('.pp').attr('id','diablitosp');
-  		}
-  		if (ui.draggable[0].id == 'mona') {
-	  		$('.modalreproductor').css({'display':'flex'});
-	  		$('.btn-play').attr('id','mona');
-	  		$('.pp').attr('id','monap');
-  		}
-  		if (ui.draggable[0].id == 'tecuanicha') {
-	  		$('.modalreproductor').css({'display':'flex'});
-	  		$('.btn-play').attr('id','tecuanicha');
-	  		$('.pp').attr('id','tecuanichap');
-  		}
-  		if (ui.draggable[0].id == 'perros') {
-	  		$('.modalreproductor').css({'display':'flex'});
-	  		$('.btn-play').attr('id','perros');
-	  		$('.pp').attr('id','perrosp');
-  		}
-  		if (ui.draggable[0].id == 'onada') {
-	  		$('.modalreproductor').css({'display':'flex'});
-	  		$('.btn-play').attr('id','onada');
-	  		$('.pp').attr('id','onadap');
-  		}
-  }
+	if (this.id == 'diablitos') {
+		$('.modalreproductor').css({'display':'flex'});
+		$('.btn-play').attr('id','diablitos');
+		$('.pp').attr('id','diablitosp');
+		$('.titulo_aidio_modal').html('El hombre que comio diablitos');
+	}
+	if (this.id == 'mona') {
+		$('.modalreproductor').css({'display':'flex'});
+		$('.btn-play').attr('id','mona');
+		$('.pp').attr('id','monap');
+		$('.titulo_aidio_modal').html('El hombre que comio diablitos');
+	}
+	if (this.id == 'tecuanicha') {
+		$('.modalreproductor').css({'display':'flex'});
+		$('.btn-play').attr('id','tecuanicha');
+		$('.pp').attr('id','tecuanichap');
+		$('.titulo_aidio_modal').html('El hombre que comio diablitos');
+	}
+	if (this.id == 'perros') {
+		$('.modalreproductor').css({'display':'flex'});
+		$('.btn-play').attr('id','perros');
+		$('.pp').attr('id','perrosp');
+		$('.titulo_aidio_modal').html('El hombre que comio diablitos');
+	}
+	if (this.id == 'onada') {
+		$('.modalreproductor').css({'display':'flex'});
+		$('.btn-play').attr('id','onada');
+		$('.pp').attr('id','onadap');
+		$('.titulo_aidio_modal').html('El hombre que comio diablitos');
+	}
+	
 });
 
 $( ".menuopen" ).click(function() { 
