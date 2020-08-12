@@ -37,7 +37,13 @@ var sonido_bien = new Howl({
 
 var joven = new Howl({
 	src: ["assets/sonidos/joven.mp3"],
-	volume: 0.5
+	volume: 0.5,
+	onload: function(){
+		console.log('cargando');
+	},
+	onplay: function(){
+		console.log('ya se cargo');
+	}
 });
 
 function pop1(){
@@ -49,6 +55,8 @@ function pop2(){
 function pop3(){
 	sonido_pop3.play();
 }
+
+
 
 $(".drag").draggable({
   opacity: 1,
