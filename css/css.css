@@ -413,6 +413,7 @@ position: absolute;
     background: red;
     height: 2rem;
     border-radius: 2vw;
+    cursor: pointer;
 }
 
 .cargando{
