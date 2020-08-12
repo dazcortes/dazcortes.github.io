@@ -682,6 +682,7 @@ to{-webkit-transform:translatey(-45px);transform:translatey(-45px)}}
   align-items: center;
   font-weight: bold;
   padding: 2rem;
+  margin-top: 2vw;
 }
 .contactnumber{
   background: #ff9800;
