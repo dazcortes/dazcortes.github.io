@@ -657,6 +657,9 @@ to{-webkit-transform:translatey(-45px);transform:translatey(-45px)}}
 
 
 @media (orientation: portrait) {
+  .mapa img{
+    width: 90vw;
+  }
 
   .loadimg2{
     position: absolute;

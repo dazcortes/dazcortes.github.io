@@ -48,3 +48,35 @@ $( ".backimg" ).click(function() {
 	$('.backimg').css({'padding':'1vw'});
 	window.history.back();
 });
+
+$( ".menuopen" ).click(function() { 
+	$('.menu').show('slow');
+	sonido_bien.play();
+});
+
+$( ".equis" ).click(function() { 
+	$('.menu').hide('slow');
+	sonido_bien.play();
+});
+
+$( ".serviciosmenu" ).click(function() { 
+	sonido_bien.play();
+	setTimeout(function(){ location.href='servicios.html'; }, 1000);
+});
+$( ".clasesmenu" ).click(function() { 
+	sonido_bien.play();
+	setTimeout(function(){ location.href='clases.html'; }, 1000);
+});
+$( ".productsmenu" ).click(function() { 
+	sonido_bien.play();
+	setTimeout(function(){ location.href='productos.html'; }, 1000);
+});
+$( ".contactomenu" ).click(function() { 
+	sonido_bien.play();
+	setTimeout(function(){ location.href='contacto.html'; }, 1000);
+});
+
+$( ".logoimg img" ).click(function() { 
+	sonido_bien.play();
+	setTimeout(function(){ location.href='index.html'; }, 1000);
+});

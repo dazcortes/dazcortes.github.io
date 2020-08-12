@@ -16,20 +16,24 @@ window.addEventListener("load", function(){
     
 });
 
-
+Howler.autoUnlock = false;
 var sonido_pop1 = new Howl({
+	
 	src: ["assets/sonidos/bur1.mp3"],
 	volume: 0.5
 });
 var sonido_pop2 = new Howl({
+	
 	src: ["assets/sonidos/bur2.mp3"],
 	volume: 0.5
 });
 var sonido_pop3 = new Howl({
+	
 	src: ["assets/sonidos/bur3.mp3"],
 	volume: 0.5
 });
 var sonido_bien = new Howl({
+	
 	src: ["assets/sonidos/bien.mp3"],
 	volume: 0.5
 });
