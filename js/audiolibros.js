@@ -105,25 +105,25 @@ $( ".contsonido" ).click(function() {
 		$('.modalreproductor').css({'display':'flex'});
 		$('.btn-play').attr('id','mona');
 		$('.pp').attr('id','monap');
-		$('.titulo_aidio_modal').html('El hombre que comio diablitos');
+		$('.titulo_aidio_modal').html('La mona');
 	}
 	if (this.id == 'tecuanicha') {
 		$('.modalreproductor').css({'display':'flex'});
 		$('.btn-play').attr('id','tecuanicha');
 		$('.pp').attr('id','tecuanichap');
-		$('.titulo_aidio_modal').html('El hombre que comio diablitos');
+		$('.titulo_aidio_modal').html('La tecuanicha');
 	}
 	if (this.id == 'perros') {
 		$('.modalreproductor').css({'display':'flex'});
 		$('.btn-play').attr('id','perros');
 		$('.pp').attr('id','perrosp');
-		$('.titulo_aidio_modal').html('El hombre que comio diablitos');
+		$('.titulo_aidio_modal').html('Lo que los perros ven');
 	}
 	if (this.id == 'onada') {
 		$('.modalreproductor').css({'display':'flex'});
 		$('.btn-play').attr('id','onada');
 		$('.pp').attr('id','onadap');
-		$('.titulo_aidio_modal').html('El hombre que comio diablitos');
+		$('.titulo_aidio_modal').html('O todo, o nada');
 	}
 	
 });
