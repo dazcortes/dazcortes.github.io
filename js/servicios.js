@@ -66,25 +66,29 @@ $(".drop").droppable({
 	  "ui-droppable-active": "ui-state-default"
 	},
   drop: function (event, ui) {
-  	console.log(ui.draggable[0]);
-  	$('.drop').removeClass('robotinactive');
-  	$('.drop').addClass('robotactive');
-  	$('.txtglob2').addClass('txtglob');
-  	$('.txtglob').removeClass('txtglob2');
-  	$('.globr2').addClass('globr');
-	$('.globr').removeClass('globr2');
-  	setTimeout(function(){
-  		gsap.to(".loadimg2", {opacity: 0, x: 1000, duration: 3})
-  		gsap.to(".contw", {opacity: 0, y: -1000, duration: 3})
-  		gsap.to(".conts", {opacity: 0, x: -1000, duration: 3})
-  		gsap.to(".contp", {opacity: 0, x: 1000, duration: 3})
+  	console.log(ui.draggable[0]);  
   		sonido_bien.play();
-  		if (ui.draggable[0].id == 'clases') {setTimeout(function(){ location.href='clases.html';}, 500);}
-  		if (ui.draggable[0].id == 'servicio') {setTimeout(function(){ location.href='servicios.html';}, 500);}
-  		if (ui.draggable[0].id == 'productos') {setTimeout(function(){ location.href='productos.html';}, 500);}
-  		
-  	}, 500);
-    
+  		if (ui.draggable[0].id == 'web') {
+  		 	$('.modalservic').css({'display':'flex'});
+  		 	$('.modalservic').css({'background':'#FF9800'});
+  		 	$('.titlemodalservic').html('Paginas web.');
+  		 	$('.txtmodalserv2').html('Nuestras paginas interactivas son la mejor opcion, tus clientes podran interactuar con tu pagina y producto, diseñamos y realizamos cualquier cosa que te puedas imaginar.');
+  		 	$('.txtmodalserv1').html('Quieres dar a conocer tu empresa de una manera creativa y profesional? donde muestres quienes son y a que se dedican? así como un catálogo de productos y/o servicios?');
+  		}
+  		if (ui.draggable[0].id == 'sistemas') {
+  		 	$('.modalservic').css({'display':'flex'});
+  		 	$('.modalservic').css({'background':'#009688'});
+  		 	$('.titlemodalservic').html('Sistemas a la medida.');
+  		 	$('.txtmodalserv2').html('Durante el proceso, trabajamos al lado del cliente para validar cada parte del desarrollo con los usuarios finales, y elegimos las tecnologías más adecuadas para su proyecto.');
+  		 	$('.txtmodalserv1').html('Esto nos permite diseñar sistemas eficientes y apegados a los procesos de la empresa.Llámanos, presupuestos sin compromiso.');
+  		}
+  		if (ui.draggable[0].id == 'puntov') {
+  		 	$('.modalservic').css({'display':'flex'});
+  		 	$('.modalservic').css({'background':'#e91e63'});
+  		 	$('.titlemodalservic').html('Puntos de venta.');
+  		 	$('.txtmodalserv2').html('La solución tecnológica que tu negocio necesita, un software en tu equipo de punto de venta que te permite ahorrar tiempo, llevar un control de tus ventas de manera precisa, controlar tu inventario y por lo tanto aumentar tu productividad.');
+  		 	$('.txtmodalserv1').html('Tan fácil como: busca un producto con tu lectora láser, selecciónalo, vende, imprime tu ticket y ¡listo!');
+  		}
   }
 });
 
@@ -123,4 +127,8 @@ $( ".logoimg img" ).click(function() {
 $( ".backimg" ).click(function() { 
 	$('.backimg').css({'padding':'1vw'});
 	window.history.back();
+});
+
+$( ".cerrarservic" ).click(function() { 
+	$('.modalservic').css({'display':'none'});
 });

@@ -141,6 +141,7 @@
   color: white;
   font-family: boldedico;
   font-size: 2vw;
+  padding: 2vw;
 }
 
 .contenido-productos{
@@ -212,7 +213,7 @@
 }
 
 .pagweb{
-  background-color: #009688;
+  background-color: #ffc107;
   cursor: grab;
   transform: rotate(-11deg);
 }
@@ -222,7 +223,7 @@
   transform: rotate(11deg);
 }
 .pventa{
-  background-color: #009688;
+  background-color: #e91e63;
   cursor: grab;
   transform: rotate(-11deg);
 }
@@ -440,6 +441,67 @@ position: absolute;
 .contsonido p{
   font-size: 1rem;
   font-weight: bold;
+}
+
+.modalservic{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FF9800;
+  top: 0;
+  z-index: 7;
+  display: none;
+  animation: zoomimg 2s;
+  -webkit-box-shadow: inset -1px -8px 42px 12px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset -1px -8px 42px 12px rgba(0,0,0,0.75);
+  box-shadow: inset -1px -8px 42px 12px rgba(0,0,0,0.75);
+}
+.service-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titlemodalservic{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.txtmodalserv1{
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.txtmodalserv2{
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.txtmodalserv{
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.service-cont button{
+  padding: 0.5rem;
+  border: 0px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  outline: none;
+  color: white;
+  background-color: #009688;
+  -webkit-box-shadow: inset -1px -8px 42px 12px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset -1px -8px 42px 12px rgba(0,0,0,0.75);
+  box-shadow: inset -1px -8px 42px 12px rgba(0,0,0,0.75);
+}
+.worpng{
+  width: 20vw;
 }
 
 

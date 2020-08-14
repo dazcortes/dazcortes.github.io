@@ -66,14 +66,7 @@ $(".drop").droppable({
 	  "ui-droppable-active": "ui-state-default"
 	},
   drop: function (event, ui) {
-  	console.log(ui.draggable[0].id);
-  	$('.drop').removeClass('robotinactive');
-  	$('.drop').addClass('robotactive');
-  	$('.txtglob2').addClass('txtglob');
-  	$('.txtglob').removeClass('txtglob2');
-  	$('.globr2').addClass('globr');
-	$('.globr').removeClass('globr2');
-  	    
+  	$('.modalservic').css({'display':'flex'});  	    
   }
 });
 
@@ -116,4 +109,8 @@ $( ".logoimg img" ).click(function() {
 $( ".backimg" ).click(function() { 
 	$('.backimg').css({'padding':'1vw'});
 	window.history.back();
+});
+
+$( ".cerrarservic" ).click(function() { 
+	$('.modalservic').css({'display':'none'});
 });

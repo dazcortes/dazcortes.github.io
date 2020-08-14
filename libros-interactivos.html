@@ -16,7 +16,7 @@
 		<img src="assets/giroW.png">
 	</div>
 	
-	<div class="mainini">
+	<div style="overflow: auto;" class="mainini">
 		<div class="load-page">
 			<div class="load-page-content">
 				<img class="logoload" src="assets/logo.png">
@@ -53,38 +53,86 @@
 			</div>
 			<div class="title-productos">
 				<img class="backimg" src="assets/regresar.png">
-				<p>Productos</p>
+				<p>Interactivos</p>
 			</div>
 			<div class="btn-menu">
 				<img class="menuopen" src="assets/menu_b.png">
 			</div>
 		</div>
 
+		
+			<div class="contenido-audio container">
+				<div class="row">
+					
+					<div class="col-12 col-sm-4 col-md-3">
+						<div onmouseenter="pop3();" class="contsonido" id="perros">
+							<img src="assets/audiolibrosimg/terror.jpg">
+							<p>LO QUE VEN LOS PERROS</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-3">
+						<div onmouseenter="pop3();" class="contsonido" id="joven">
+							<img src="assets/audiolibrosimg/pinocho.jpg">
+							<p>CUANDO YO ERA JOVEN</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-3">
+						<div onmouseenter="pop3();" class="contsonido" id="diablitos">
+							<img src="assets/audiolibrosimg/terror.jpg">
+							<p>EL HOMBRE QUE COMIO DIABLITOS</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-3">
+						<div onmouseenter="pop3();" class="contsonido" id="mona">
+							<img src="assets/audiolibrosimg/elfo.png">
+							<p>LA MONA</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-3">
+						<div onmouseenter="pop3();" class="contsonido" id="tecuanicha">
+							<img src="assets/audiolibrosimg/terror.jpg">
+							<p>LA TECUANICHA</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-3">
+						<div onmouseenter="pop3();" class="contsonido" id="onada">
+							<img src="assets/audiolibrosimg/terror.jpg">
+							<p>O TODO, O NADA</p>
+						</div>
+					</div>
 
-		<div class="contenido-productos">
-			<div class="productosc">
-				<p onmouseenter="pop3();" class="productossec drag" id="productos">Productos charo</p>
-			</div>			
-			<div class="audiolibrossec drag" id="audiolibros">
-				<p onmouseenter="pop3();" class="audiolibros">Audiolibros</p>
+				</div>
 			</div>
-			<div class="librosinteractivos">
-				<p onmouseenter="pop3();" class="libros drag" id="libros">Libros interactivos</p>
+			
+
+		<div class="modalreproductor">
+			<div class="modalreproductor-cont">
+				<div class="titlerepro">
+					<p class="titulo_aidio_modal"></p>
+				</div>
+				<div class="playim">
+					<div class="contbtnplay">
+						<img class="btn-play" src="assets/play.png">
+					</div>
+					<div class="btnstop">
+						<img class="stopimg" src="assets/leyenda.png">
+					</div>
+
+				</div>
+				<p class="cargando">Cargando...</p>
+				<div class="cerrarmusic">
+					<div class="pp">
+						<p>X</p>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 
-		<div class="robotarea">
-			<div class="txtglob">
-				<p>Arrastra hacia mi una de las opciones de arriba para llevarte a descrubrila.</p>
+		<div class="footer">
+			<div class="contfoot">
+				<p>© 2020 Copyright: EDICOWARE</p>
 			</div>
-			<img class="globr" src="assets/glob.png">
-			<img class="loadimg2 drop robotinactive" src="assets/load.gif">
-
-		</div>
-
-		<div class="redes">
-			<img class="face" src="assets/face.png">
-			<img class="whats" src="assets/whats.png">
 		</div>
 		
 	</div>
@@ -95,7 +143,7 @@
 	<script src="js/gsap.js"></script>
 	<script src="js/punch.js"></script>
 	<script src="js/howler.js"></script>
-	<script src="js/productos.js"></script>
+	<script src="js/interactivos.js"></script>
 	
 </body>
 </html>
