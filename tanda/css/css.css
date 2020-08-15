@@ -111,3 +111,12 @@
     font-size: 2rem;
     border: 0px;
 }
+.total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #E91E63;
+    font-weight: bold;
+}
