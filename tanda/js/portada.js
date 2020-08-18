@@ -10,13 +10,13 @@ var tanda = {
             {
                 nombre: "Elias",
                 fecha: "16/08/2020",
-                status:"Proximo",
+                status:"Entregado",
                 id:1
             }, 
             {
                 nombre: "Cucuy/Flor",
                 fecha: "31/08/2020",
-                status:"Pendiente",
+                status:"Proximo",
                 id:2
             }, 
             {
