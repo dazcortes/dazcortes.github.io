@@ -81,14 +81,13 @@
   font-size: 2rem;
   color: white;
   padding: 1rem;
-  border-radius: 2vw;
   outline: none;
 }
 .tituloM{
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 2;
-  font-weight: 600;
+  font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
   padding-bottom: 2px;
@@ -98,7 +97,7 @@
 .descripcionM{
   margin: 0;
   font-size: 2rem;
-  line-height: 1;
+  line-height: 2;
   font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -122,6 +121,11 @@
   color: #ff9800;
   cursor: pointer;
 }
+.imgdetallem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 @media (orientation: portrait) {
@@ -144,7 +148,6 @@
   }
   .comprarbtn{
     display: flex;
-    justify-content: center;align-items: center;
   }
   .tituloM{
     margin-top: 5rem;

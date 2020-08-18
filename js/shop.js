@@ -65,6 +65,7 @@ const app = new Vue({
 			$('.descripcionM').html(this.productos[id].descripcion);
 			$('.precioM').html(this.productos[id].precio);
 			$('.imgdetalle').attr('src', this.productos[id].img);
+			$('.hrefw').attr('href', 'https://wa.me/524431115452?text=Hola%20me%20 interesa%20este%20producto:%20https://dazcortes.github.io/'+this.productos[id].img+'"');
 		}
 	}
 
