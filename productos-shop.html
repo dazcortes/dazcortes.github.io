@@ -61,74 +61,38 @@
 
 
 		<div class="contenido-productosshop container">
-			<div class="row">
-				<div class="itemcont col-12 col-sm-6 col-md-4">
-					<div class="contitem">
-						<img class="img-responsive" src="assets/shop/audifonos.png">
-						<p class="titleproducto">Audifonos BT</p>
-						<p class="descripproduct">Audifonos inalambricos recargables</p>
-						<p class="price-product">$80<span>.MXN</span></p>
+			<div id="app" class="row itemsp">
+				<div class="itemcont col-12 col-sm-6 col-md-4" v-for="items in productos">
+					<div @click="modal(items.id)" class="contitem">
+						<img class="img-responsive" :src="items.img">
+						<p class="titleproducto">{{items.titulo}}</p>
+						<p class="descripproduct">{{items.descripcion}}</p>
+						<p class="price-product">${{items.precio}}<span>.MXN</span></p>
 						<button>Detalles</button>
 					</div>
 				</div>
-
-				<div class="itemcont col-12 col-sm-6 col-md-4">
-					<div class="contitem">
-						<img class="img-responsive" src="assets/shop/cargador.jpg">
-						<p class="titleproducto">Cargador V8</p>
-						<p class="descripproduct">Cargador para celular carga rapida</p>
-						<p class="price-product">$80<span>.MXN</span></p>
-						<button>Detalles</button>
-					</div>
-				</div>
-				<div class="itemcont col-12 col-sm-6 col-md-4">
-					<div class="contitem">
-						<img class="img-responsive" src="assets/shop/lampara.jpg">
-						<p class="titleproducto">Lampara de lava</p>
-						<p class="descripproduct">Lampara de lava para tu recamara.</p>
-						<p class="price-product">$300<span>.MXN</span></p>
-						<button>Detalles</button>
-					</div>
-				</div>
-				<div class="itemcont col-12 col-sm-6 col-md-4">
-					<div class="contitem">
-						<img class="img-responsive" src="assets/shop/reloj.jpg">
-						<p class="titleproducto">Reloj para dama</p>
-						<p class="descripproduct">Reloj para dama especial para regalo</p>
-						<p class="price-product">$300<span>.MXN</span></p>
-						<button>Detalles</button>
-					</div>
-				</div>
-				<div class="itemcont col-12 col-sm-6 col-md-4">
-					<div class="contitem">
-						<img class="img-responsive" src="assets/shop/usb16.jpg">
-						<p class="titleproducto">USB 32G</p>
-						<p class="descripproduct">USB 32G de almacenamiento</p>
-						<p class="price-product">$140<span>.MXN</span></p>
-						<button>Detalles</button>
-					</div>
-				</div>
-				<div class="itemcont col-12 col-sm-6 col-md-4">
-					<div class="contitem">
-						<img class="img-responsive" src="assets/shop/bocina.jpg">
-						<p class="titleproducto">Bocina BT</p>
-						<p class="descripproduct">Bocina BT inalambrica,SD USB Auxiliar</p>
-						<p class="price-product">$230<span>.MXN</span></p>
-						<button>Detalles</button>
-					</div>
-				</div>
-				<div class="itemcont col-12 col-sm-6 col-md-4">
-					<div class="contitem">
-						<img class="img-responsive" src="assets/shop/usb16.jpg">
-						<p class="titleproducto">USB 16G</p>
-						<p class="descripproduct">USB 16G de almacenamiento</p>
-						<p class="price-product">$140<span>.MXN</span></p>
-						<button>Detalles</button>
-					</div>
-				</div>
-
 			</div>
-			
+		</div>
+
+		<div class="modal-detalles">
+			<div class="modal-detalles-cont">
+				<div class="cerraritem">
+					<p>X</p>
+				</div>
+				<div class="img">
+					<img class="imgdetalle" src="">
+				</div>
+				<div class="detalles-txt">
+					<p class="tituloM"></p>
+					<span>$</span>
+					<span class="precioM"></span>
+					<span>.MXN</span>
+					<div class="comprarbtn">
+						<button>Comprar</button>
+					</div>
+					<p class="descripcionM"></p>
+				</div>
+			</div>
 		</div>
 
 		<div class="footer">
@@ -146,7 +110,8 @@
 	<script src="js/gsap.js"></script>
 	<script src="js/punch.js"></script>
 	<script src="js/howler.js"></script>
-	<script src="js/productos.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/shop.js"></script>
 	
 	
 </body>
