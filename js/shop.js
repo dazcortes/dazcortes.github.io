@@ -55,6 +55,13 @@ const app = new Vue({
 				img: "assets/shop/usb16.jpg",
 				id:6
 			},
+			{
+				titulo: "Cargador universal",
+				descripcion: "Cargador universal para pilas",
+				precio:50,
+				img: "assets/shop/cargadoruni.jpg",
+				id:7
+			},
 		]
 	},
 
@@ -70,6 +77,8 @@ const app = new Vue({
 	}
 
 })
+
+
 
 window.addEventListener("load", function(){
 	setTimeout(function(){
