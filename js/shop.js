@@ -62,6 +62,20 @@ const app = new Vue({
 				img: "assets/shop/cargadoruni.jpg",
 				id:7
 			},
+			{
+				titulo: "Espejo Led Touch",
+				descripcion: "Espejo Maquillaje Con Luz 22 Led Rotación De 180 °.Pantalla táctil del maquillaje del espejo LED de luces inteligentes de atenuación ajustable de belleza maquillaje cosmético herramienta de mesa",
+				precio:380,
+				img: "assets/shop/espejo1.png",
+				id:8
+			},
+			{
+				titulo: "Luces Para Espejo Tocador Maquillaje",
+				descripcion: "LONK luces del espejo de tocador son durables y versátiles. Ideal para maquillaje a todo los guapos y guapas. Se puede colocar las luces en cualquier lugar que desee decorar como el baño, el tocador, el vestidor o la pared, etc.",
+				precio:380,
+				img: "assets/shop/espejo2.png",
+				id:9
+			},
 		]
 	},
 
