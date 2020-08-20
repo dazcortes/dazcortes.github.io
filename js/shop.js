@@ -76,8 +76,56 @@ const app = new Vue({
 				img: "assets/shop/espejo2.png",
 				id:9
 			},
+			{
+				titulo: "Reloj Caballero cafe",
+				descripcion: "Reloj caballero correo de cuero modelo moda.",
+				precio:300,
+				img: "assets/shop/relojcafe.jpg",
+				id:10
+			},
+			{
+				titulo: "Reloj Caballero blanco",
+				descripcion: "Reloj caballero correo de cuero modelo moda.",
+				precio:300,
+				img: "assets/shop/relojblaco.jpg",
+				id:11
+			},
+			{
+				titulo: "Reloj Caballero Diesel",
+				descripcion: "Reloj caballero correo de cuero modelo moda.",
+				precio:330,
+				img: "assets/shop/relojdiesel.jpg",
+				id:12
+			},
+			{
+				titulo: "Reloj Casio G-shock",
+				descripcion: " Doble máquina digital y analógico Resistente a salpicaduras <br>Resistente a impactos<br>Fechador<br>Alarma<br> Cronometro<br> Luz",
+				precio:330,
+				img: "assets/shop/casiogso.jpg",
+				id:13
+			},
+			{
+				titulo: "Reloj Diesel",
+				descripcion: " Doble máquina digital y analógico Resistente a salpicaduras <br>Resistente a impactos<br>Fechador<br>Alarma<br> Cronometro<br> Luz",
+				precio:330,
+				img: "assets/shop/dieselbasico.jpg",
+				id:14
+			},
+			{
+				titulo: "Reloj Diesel",
+				descripcion: " Doble máquina digital y analógico Resistente a salpicaduras <br>Resistente a impactos<br>Fechador<br>Alarma<br> Cronometro<br> Luz",
+				precio:330,
+				img: "assets/shop/relojsimple.jpg",
+				id:15
+			},
 		]
 	},
+
+	computed: {
+    	reversedItems() {
+	      return this.productos.slice().reverse();
+    	},
+  	},
 
 	methods:{
 		modal(id){
