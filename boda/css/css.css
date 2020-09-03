@@ -83,7 +83,7 @@
 	height: auto;
 	display: none;
 	top: 0;
-	background: #101010cf;
+	background: black;
 	padding: 2rem;
 	animation: zoomimg 1s;
 }
@@ -91,6 +91,9 @@
 	width: 100%;
 	margin: 1rem;
 	border-radius: 2vw;
+	-webkit-box-shadow: 4px 7px 44px -12px rgba(252,249,252,1);
+	-moz-box-shadow: 4px 7px 44px -12px rgba(252,249,252,1);
+	box-shadow: 4px 7px 44px -12px rgba(252,249,252,1);
 }
 .imgs{
 	display: flex;
@@ -103,7 +106,7 @@
     font-size: 1rem;
     font-family: mikado;
     font-weight: 500;
-	
+
 }
 
 .modalDamas{
@@ -112,7 +115,7 @@
 	height: auto;
 	display: none;
 	top: 0;
-	background: #101010cf;
+	background: #e91e63;
 	padding: 2rem;
 	animation: zoomimg 1s;
 }
@@ -120,6 +123,9 @@
 	width: 100%;
 	margin: 1rem;
 	border-radius: 2vw;
+	-webkit-box-shadow: 4px 7px 44px -12px rgba(252,249,252,1);
+-moz-box-shadow: 4px 7px 44px -12px rgba(252,249,252,1);
+box-shadow: 4px 7px 44px -12px rgba(252,249,252,1);
 }
 .cerrar{
 	font-size: 2rem;
@@ -149,4 +155,15 @@ to{-webkit-transform:translatey(-25px);transform:translatey(-25px)}}
     100% {
       -webkit-transform:scale(1);transform:scale(1)
     }
+  }
+
+
+
+  @media (min-width: 900px){
+  	.modalCaballerosCont img{
+  		width: 50%;
+  	}
+  	.modalDamasCont img{
+  		width: 50%;
+  	}
   }

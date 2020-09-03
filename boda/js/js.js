@@ -10,6 +10,7 @@ var mujeres = new Howl({
 gsap.from(".imgLiz", {opacity: 0, x: -1000, duration: 3})
 gsap.from(".imgElias", {opacity: 0, x: 1000, duration: 3})
 gsap.from(".misdamas, .miscaballeros, .seccionDatos", {opacity: 0, y: 1000, duration: 5})
+gsap.from(".imgs", {opacity: 0, y: 1000, duration: 5})
 
 setTimeout(function(){
 	$('.imgLiz').addClass('classrebote');
