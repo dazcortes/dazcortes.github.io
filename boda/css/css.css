@@ -85,6 +85,7 @@
 	top: 0;
 	background: #101010cf;
 	padding: 2rem;
+	animation: zoomimg 1s;
 }
 .modalCaballerosCont img{
 	width: 100%;
@@ -95,7 +96,44 @@
 	display: flex;
     justify-content: center;
     align-items: center;
-    align-items: center;
+    flex-direction: column;
+}
+.imgs p{
+	color: white;
+    font-size: 1rem;
+    font-family: mikado;
+    font-weight: 500;
+	
+}
+
+.modalDamas{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	display: none;
+	top: 0;
+	background: #101010cf;
+	padding: 2rem;
+	animation: zoomimg 1s;
+}
+.modalDamasCont img{
+	width: 100%;
+	margin: 1rem;
+	border-radius: 2vw;
+}
+.cerrar{
+	font-size: 2rem;
+    color: white;
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+}
+.cerrard{
+	font-size: 2rem;
+    color: white;
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 
