@@ -323,9 +323,9 @@ body .buttons-wrapper input.w3slider-input:checked ~ label {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%; 
 	border-radius: 50%;
-	color: #fff;
+	color: #f98900;
 	background: transparent;
-	border: 1px solid #fff;
+	border: 5px solid #f98900;
 	text-align: center;
 	line-height: 54px;
 	font-size: 24px;
@@ -506,6 +506,21 @@ body .buttons-wrapper label {
 	backface-visibility: hidden;
 	z-index: 10; 
 	/*↑↓*/ 
+}
+
+.contports{
+	text-align: center;
+	cursor: pointer;
+}
+.contports img{
+	border-radius: 2vw;
+	width: 100%;
+}
+.contports p{
+	font-family: 'Kurale', serif;
+	font-size: 3rem;
+	font-weight: 500;
+	color: white;
 }
 body .buttons-wrapper .slider {
 	position: relative;
