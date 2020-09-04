@@ -1,5 +1,5 @@
 var final = new Howl({
-	src: ["success.mp3"],
+	src: ["success.mp4"],
 	volume: 1
 });
 
