@@ -127,7 +127,7 @@ $( ".cerrarultimomodal" ).click(function() {
 $( ".probarbbb" ).click(function() { 
 	contTxtarea= $('.tesxtprincipalyul').val();
 	if (contTxtarea != '') {
-		if (contTxtarea== '19 de diciembre') {
+		if (contTxtarea== '19 de diciembre' || contTxtarea== '19 de diciembre ' ) {
 			$('.modalaudio').css({'display':'flex'});
 			
 		}
