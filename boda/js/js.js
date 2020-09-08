@@ -7,9 +7,8 @@ var mujeres = new Howl({
 	src: ["images/musica/mujeres.mp3"],
 	volume: 0.5
 });
-gsap.from(".imgLiz", {opacity: 0, x: -1000, duration: 3})
-gsap.from(".imgElias", {opacity: 0, x: 1000, duration: 3})
-gsap.from(".misdamas, .miscaballeros, .seccionDatos", {opacity: 0, y: 1000, duration: 5})
+gsap.from(".incioblock", {opacity: 0, x: -1000, duration: 3})
+
 gsap.from(".imgs", {opacity: 0, y: 1000, duration: 5})
 
 setTimeout(function(){
