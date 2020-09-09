@@ -190,4 +190,12 @@ to{-webkit-transform:translatey(-25px);transform:translatey(-25px)}}
   	.modalDamasCont img{
   		width: 50%;
   	}
+  	.incioblock img{
+  		width: 20%;
+  	}
+  	.incioblock{
+  		display: flex;
+  		justify-content: center;
+  		align-items: center;
+  	}
   }
