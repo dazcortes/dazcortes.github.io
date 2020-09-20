@@ -2,17 +2,16 @@
 
 
 window.addEventListener("load", function(){
-	setTimeout(function(){
-		$('.load-page').hide('slow');
-		gsap.from(".loadimg2", {opacity: 0, x: 1000, duration: 3})
-		gsap.from(".contw", {opacity: 0, y: -1000, duration: 3})
-		gsap.from(".conts", {opacity: 0, x: -1000, duration: 3})
-		gsap.from(".contp", {opacity: 0, x: 1000, duration: 3})
-		$('.globr').addClass('globr2');
-		$('.globr').removeClass('globr');
-		$('.txtglob').addClass('txtglob2');
-		$('.txtglob').removeClass('txtglob');
-	}, 500);
+	$('.load-page').hide('slow');
+	gsap.from(".loadimg2", {opacity: 0, x: 1000, duration: 3})
+	gsap.from(".contw", {opacity: 0, y: -1000, duration: 3})
+	gsap.from(".conts", {opacity: 0, x: -1000, duration: 3})
+	gsap.from(".contp", {opacity: 0, x: 1000, duration: 3})
+	$('.globr').addClass('globr2');
+	$('.globr').removeClass('globr');
+	$('.txtglob').addClass('txtglob2');
+	$('.txtglob').removeClass('txtglob');
+	
     
 });
 
