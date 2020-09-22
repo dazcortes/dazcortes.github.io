@@ -475,18 +475,21 @@ position: absolute;
   text-align: justify;
   margin-left: 1rem;
   margin-right: 1rem;
+  font-weight: bold;
 }
 .txtmodalserv2{
   font-size: 1rem;
   text-align: justify;
   margin-left: 1rem;
   margin-right: 1rem;
+  font-weight: bold;
 }
 .txtmodalserv{
   font-size: 1rem;
   text-align: justify;
   margin-left: 1rem;
   margin-right: 1rem;
+  font-weight: bold;
 }
 .service-cont button{
   padding: 0.5rem;
