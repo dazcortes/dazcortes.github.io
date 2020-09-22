@@ -11,6 +11,17 @@
 	<link rel="stylesheet" type="text/css" href="css/load.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="icon" href="assets/logo.png">
+	<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="2536640499948798"
+  logged_in_greeting="Hola en que puedo ayudarte?"
+  logged_out_greeting="Hola en que puedo ayudarte?">
+      </div>
 </head>
 <body>
 	<!--<div class="main_cuartolandscape">
@@ -104,6 +115,23 @@
 	<script src="js/howler.js"></script>
 	<script src="js/punch.js"></script>
 	<script src="js/portada.js"></script>
+
+	<script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+  </script>
 	
 </body>
 </html>
