@@ -157,6 +157,7 @@ body{
     right: 5vw;
     flex-direction: column;
     bottom: 5vh;
+    display: none;
 }
 
 
