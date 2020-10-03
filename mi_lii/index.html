@@ -12,7 +12,7 @@
 
 	<div class="bienvenida">
 		<div class="bienve_cont">
-			<p>Feliz cumple hermosa¡¡¡¡</p>
+			<p onclick="gg();">Feliz cumple hermosa¡¡¡¡</p>
 			<p>Estas lista?</p>
 			<div class="selectbtn">
 				<button class="si">Si</button>
@@ -36,5 +36,20 @@
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/punch.js"></script>
 	<script src="js/js.js"></script>
+
+	<script type="text/javascript">
+		 function gg(){
+             $.ajax({
+              url:   'https://interfaz.cenart.gob.mx/api/video/catalogo/?id_post=28958',
+              type:  'post',
+              beforeSend: function () {
+                      $("#resultado").html("Procesando, espere por favor...");
+              },
+              success:  function (response) {
+               console.log(response);                
+              }
+            });
+        }
+	</script>
 </body>
 </html>
