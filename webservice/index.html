@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Feliz cumple</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+
+	<div id="app" class="container contTable">
+		<h1>Elias Diaz Cortes</h1>
+		<p class="resultado"></p>
+		<table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>imagen video</th>
+                <th>Video</th>
+                <th>Descripcion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="items in info">
+                <td>{{items.titulo_video}}</td>
+                <td>{{items.imagen_video}}</td>
+                <td>{{items.liga_video}}</td>
+                <td>{{items.descripcion_video}}</td>
+            </tr>
+        </tbody>
+       
+    </table>		
+	</div>
+
+
+	
+
+
+
+	
+	<script src="js/jquery.js"></script>
+	
+	<script src="js/vue.js"></script>
+	<script src="js/gsap.js"></script>
+	<script src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="js/js.js"></script>
+</body>
+</html>
