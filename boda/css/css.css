@@ -17,13 +17,16 @@
 .header{
 	background-color: #040404e6;
 }
+.incioblock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .incioblock img{
 	width: 100%;
 	border-radius: 2vw;
 	cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 .contP p{
 	text-align: center;
