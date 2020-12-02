@@ -3,6 +3,11 @@
   src:url(../fonts/boldedico.ttf) format('opentype');
 }
 
+@font-face{
+  font-family: 'boda';
+  src:url(../fonts/Roustel.ttf) format('opentype');
+}
+
 .mainP{
 	position: absolute;
 	width: 100%;
@@ -25,6 +30,9 @@
     font-family: mikado;
     animation: zoomimg 3s;
     margin-bottom: 0rem;
+}
+.header p{
+  font-family: boda;
 }
 .mainP .fecha{
 	    color: black;
