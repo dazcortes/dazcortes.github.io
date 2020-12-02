@@ -19,7 +19,7 @@ body{
 
 
 .mainini{  
-  background-color: rgb(44,32,20,100);
+  background-image: url('../assets/fondo.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -28,7 +28,7 @@ body{
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: linear-gradient(to right, red , yellow);
+
 } 
 
 .contw{
@@ -157,6 +157,7 @@ body{
     right: 5vw;
     flex-direction: column;
     bottom: 5vh;
+    display: none;
 }
 
 
